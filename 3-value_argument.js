@@ -1,7 +1,9 @@
 const args = process.argv.slice(2);
 
-if (args.isEmpty()) {
+const [firstArg] = args;
+
+if (!firstArg) {
   console.log('No argument');
 } else {
-  console.log(args[0]);
+  console.log(firstArg);
 }
